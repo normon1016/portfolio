@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>联系 · 临沧·影像志</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">临沧·影像志</div>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="works.html">作品集</a></li>
+      <li><a href="about.html">关于我</a></li>
+      <li><a href="contact.html" class="active">联系</a></li>
+    </ul>
+    <div class="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <section class="page-hero">
+    <h1>联系我</h1>
+    <p>合作邀约、交流探讨，都欢迎</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+
+      <div class="contact-info">
+        <h2>保持联系</h2>
+        <p>如果你对临沧影像感兴趣，或者想聊聊 AI 创作，欢迎联系我。</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>邮箱</strong>
+              <p>your@email.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div>
+              <strong>微信</strong>
+              <p>your_wechat_id</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🎬</span>
+            <div>
+              <strong>B站</strong>
+              <p>@你的B站账号</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>发送消息</h2>
+        <form onsubmit="handleForm(event)">
+          <div class="form-group">
+            <label>你的名字</label>
+            <input type="text" placeholder="怎么称呼你？" required />
+          </div>
+          <div class="form-group">
+            <label>联系方式</label>
+            <input type="text" placeholder="邮箱或微信" required />
+          </div>
+          <div class="form-group">
+            <label>想说的话</label>
+            <textarea rows="5" placeholder="合作邀约、创作交流……" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">发送</button>
+        </form>
+        <div class="form-success" id="formSuccess">消息已记录，我会尽快回复你。</div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 临沧·影像志 · 用 AI 记录这片土地</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
