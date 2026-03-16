@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我 · 临沧·影像志</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">临沧·影像志</div>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="works.html">作品集</a></li>
+      <li><a href="about.html" class="active">关于我</a></li>
+      <li><a href="contact.html">联系</a></li>
+    </ul>
+    <div class="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <section class="page-hero">
+    <h1>关于我</h1>
+    <p>一个用 AI 重新发现临沧的影像创作者</p>
+  </section>
+
+  <section class="about-section">
+    <div class="about-container">
+      <div class="about-avatar">
+        <div class="avatar-circle">
+          <img src="assets/avatar.jpg" alt="头像" onerror="this.style.display='none'" />
+          <span class="avatar-fallback">影</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <h2>你好，我是一名 AI 影像创作者</h2>
+        <p class="about-lead">来自临沧，用 AI 工具重新诠释这片被低估的土地。</p>
+        <p>临沧有澜沧江、有翁丁古寨、有千年崖画、有无边茶山——但很少有人真正看见它。我用 AI 生成影像的方式，试图让更多人感受这片土地的厚度。</p>
+        <p>我使用的工具包括可灵、Runway、Sora 等 AI 视频生成平台，结合提示词工程和后期调色，创作出兼具视觉冲击力和文化叙事的影像作品。</p>
+
+        <div class="skills-block">
+          <h3>创作工具</h3>
+          <div class="skill-tags">
+            <span>可灵 AI</span>
+            <span>Runway Gen-3</span>
+            <span>Sora</span>
+            <span>Midjourney</span>
+            <span>剪映</span>
+            <span>提示词工程</span>
+          </div>
+        </div>
+
+        <div class="skills-block">
+          <h3>创作方向</h3>
+          <div class="skill-tags">
+            <span>地方宣传片</span>
+            <span>民族文化影像</span>
+            <span>自然景观</span>
+            <span>边境风情</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 临沧·影像志 · 用 AI 记录这片土地</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
