@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>临沧·影像志</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 导航 -->
+  <nav class="navbar">
+    <div class="nav-logo">临沧·影像志</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">首页</a></li>
+      <li><a href="works.html">作品集</a></li>
+      <li><a href="about.html">关于我</a></li>
+      <li><a href="contact.html">联系</a></li>
+    </ul>
+    <div class="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <!-- 英雄区 -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-sub">AI 影像创作</p>
+      <h1 class="hero-title">用 AI 重新发现<br>这片土地的灵魂</h1>
+      <p class="hero-desc">临沧 · 澜沧江 · 茶山 · 佤族文化</p>
+      <a href="works.html" class="btn-primary">探索作品</a>
+    </div>
+    <div class="hero-scroll">↓</div>
+  </section>
+
+  <!-- 精选作品预览 -->
+  <section class="featured">
+    <div class="section-header">
+      <span class="section-tag">精选</span>
+      <h2>近期作品</h2>
+    </div>
+    <div class="featured-grid">
+      <div class="featured-card large">
+        <div class="card-media">
+          <img src="assets/placeholder-1.jpg" alt="澜沧江大峡谷" onerror="this.style.background='#2a3a2a'" />
+          <div class="card-overlay"><span class="card-type">视频</span></div>
+        </div>
+        <div class="card-info">
+          <h3>澜沧江大峡谷</h3>
+          <p>史诗级航拍 · AI 生成</p>
+        </div>
+      </div>
+      <div class="featured-card">
+        <div class="card-media">
+          <img src="assets/placeholder-2.jpg" alt="翁丁古寨" onerror="this.style.background='#3a2a1a'" />
+          <div class="card-overlay"><span class="card-type">视频</span></div>
+        </div>
+        <div class="card-info">
+          <h3>翁丁古寨·晨火</h3>
+          <p>佤族文化 · AI 生成</p>
+        </div>
+      </div>
+      <div class="featured-card">
+        <div class="card-media">
+          <img src="assets/placeholder-3.jpg" alt="茶山梯田" onerror="this.style.background='#1a3a2a'" />
+          <div class="card-overlay"><span class="card-type">图片</span></div>
+        </div>
+        <div class="card-info">
+          <h3>茶山梯田·晨雾</h3>
+          <p>普洱茶园 · AI 生成</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-footer">
+      <a href="works.html" class="btn-outline">查看全部作品 →</a>
+    </div>
+  </section>
+
+  <!-- 统计 -->
+  <section class="stats">
+    <div class="stat-item"><span class="stat-num">20+</span><span class="stat-label">AI 影像作品</span></div>
+    <div class="stat-item"><span class="stat-num">8</span><span class="stat-label">临沧县区覆盖</span></div>
+    <div class="stat-item"><span class="stat-num">3</span><span class="stat-label">AI 生成工具</span></div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 临沧·影像志 · 用 AI 记录这片土地</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
