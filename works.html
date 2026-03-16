@@ -3,30 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>作品集 · 临沧·影像志</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <title>作品集 · 杨发才 AI 作品集</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* 模态框 */
-    #mediaModal {
-      display: none; position: fixed; inset: 0; z-index: 999;
-      background: rgba(0,0,0,0.88); align-items: center; justify-content: center;
-    }
-    #modalContent { position: relative; }
-    .modal-close {
-      position: fixed; top: 20px; right: 28px; font-size: 32px; color: #fff;
-      cursor: pointer; z-index: 1000; line-height: 1;
-    }
-    /* 翻唱音频卡片 */
-    .work-audio-bar {
-      width: 100%; margin-top: 8px;
-    }
-    .work-audio-bar audio { width: 100%; height: 36px; }
-  </style>
 </head>
 <body>
-
   <nav class="navbar">
-    <div class="nav-logo">临沧·影像志</div>
+    <div class="nav-logo">杨发才 AI 作品集</div>
     <ul class="nav-links">
       <li><a href="index.html">首页</a></li>
       <li><a href="works.html" class="active">作品集</a></li>
@@ -38,144 +21,112 @@
 
   <section class="page-hero">
     <h1>作品集</h1>
-    <p>AI 影像 · AI 翻唱 · AI 海报，每一件都是临沧的另一种面貌</p>
+    <p>AI 视频 · AI 翻唱 · AI 海报</p>
   </section>
 
   <section class="works-section">
     <div class="filter-bar">
-      <button class="filter-btn active" onclick="filterWorks('all', this)">全部</button>
-      <button class="filter-btn" onclick="filterWorks('video', this)">AI 视频</button>
-      <button class="filter-btn" onclick="filterWorks('audio', this)">AI 翻唱</button>
-      <button class="filter-btn" onclick="filterWorks('image', this)">AI 海报</button>
+      <button class="filter-btn active" onclick="filterWorks('all',this)">全部</button>
+      <button class="filter-btn" onclick="filterWorks('video',this)">AI 视频</button>
+      <button class="filter-btn" onclick="filterWorks('audio',this)">AI 翻唱</button>
+      <button class="filter-btn" onclick="filterWorks('poster',this)">AI 海报</button>
     </div>
 
-    <div class="works-grid" id="worksGrid">
-
-      <!-- ===== AI 视频 ===== -->
-      <div class="work-card" data-type="video" onclick="openMedia('assets/ai视频/澜沧江大峡谷.mp4','video')">
-        <div class="work-media">
-          <div class="work-thumb" style="background:linear-gradient(135deg,#1a3020,#0a1a10)"></div>
-          <div class="work-play">▶</div>
-          <span class="work-type-badge">AI 视频</span>
-        </div>
-        <div class="work-info">
-          <h3>澜沧江大峡谷</h3>
-          <p>史诗航拍 · AI 生成</p>
-          <span class="work-tag">自然景观</span>
-        </div>
+    <div class="works-grid">
+      <!-- AI 视频 -->
+      <div class="work-card" data-type="video" onclick="openMedia('assets/ai-video/0e7ae7ce29734957e2212048a3cb2290.mp4','video')">
+        <div class="work-media"><video class="work-thumb" src="assets/ai-video/0e7ae7ce29734957e2212048a3cb2290.mp4" muted preload="metadata"></video><div class="work-play">▶</div><span class="work-type-badge">AI 视频</span></div>
+        <div class="work-info"><h3>AI 视频 01</h3></div>
+      </div>
+      <div class="work-card" data-type="video" onclick="openMedia('assets/ai-video/146c8fc3054befcf459a25667d44dc62.mp4','video')">
+        <div class="work-media"><video class="work-thumb" src="assets/ai-video/146c8fc3054befcf459a25667d44dc62.mp4" muted preload="metadata"></video><div class="work-play">▶</div><span class="work-type-badge">AI 视频</span></div>
+        <div class="work-info"><h3>AI 视频 02</h3></div>
+      </div>
+      <div class="work-card" data-type="video" onclick="openMedia('assets/ai-video/5891eb3275395c348cfccd5584b81530.mp4','video')">
+        <div class="work-media"><video class="work-thumb" src="assets/ai-video/5891eb3275395c348cfccd5584b81530.mp4" muted preload="metadata"></video><div class="work-play">▶</div><span class="work-type-badge">AI 视频</span></div>
+        <div class="work-info"><h3>AI 视频 03</h3></div>
+      </div>
+      <div class="work-card" data-type="video" onclick="openMedia('assets/ai-video/7cbf0978c1ae2b1af60dad521bec567b.mp4','video')">
+        <div class="work-media"><video class="work-thumb" src="assets/ai-video/7cbf0978c1ae2b1af60dad521bec567b.mp4" muted preload="metadata"></video><div class="work-play">▶</div><span class="work-type-badge">AI 视频</span></div>
+        <div class="work-info"><h3>AI 视频 04</h3></div>
+      </div>
+      <div class="work-card" data-type="video" onclick="openMedia('assets/ai-video/af3b2f32-ee2d-4e91-a12d-f33550698345.mp4','video')">
+        <div class="work-media"><video class="work-thumb" src="assets/ai-video/af3b2f32-ee2d-4e91-a12d-f33550698345.mp4" muted preload="metadata"></video><div class="work-play">▶</div><span class="work-type-badge">AI 视频</span></div>
+        <div class="work-info"><h3>AI 视频 05</h3></div>
+      </div>
+      <div class="work-card" data-type="video" onclick="openMedia('assets/ai-video/bb40b3518b5128cc91538fd241331a33.mp4','video')">
+        <div class="work-media"><video class="work-thumb" src="assets/ai-video/bb40b3518b5128cc91538fd241331a33.mp4" muted preload="metadata"></video><div class="work-play">▶</div><span class="work-type-badge">AI 视频</span></div>
+        <div class="work-info"><h3>AI 视频 06</h3></div>
+      </div>
+      <div class="work-card" data-type="video" onclick="openMedia('assets/ai-video/c75f04979e36f1fa1551b07de4a81046.mp4','video')">
+        <div class="work-media"><video class="work-thumb" src="assets/ai-video/c75f04979e36f1fa1551b07de4a81046.mp4" muted preload="metadata"></video><div class="work-play">▶</div><span class="work-type-badge">AI 视频</span></div>
+        <div class="work-info"><h3>AI 视频 07</h3></div>
+      </div>
+      <div class="work-card" data-type="video" onclick="openMedia('assets/ai-video/d00f1aa0c6504b560376fbf6b341b7b9.mp4','video')">
+        <div class="work-media"><video class="work-thumb" src="assets/ai-video/d00f1aa0c6504b560376fbf6b341b7b9.mp4" muted preload="metadata"></video><div class="work-play">▶</div><span class="work-type-badge">AI 视频</span></div>
+        <div class="work-info"><h3>AI 视频 08</h3></div>
       </div>
 
-      <div class="work-card" data-type="video" onclick="openMedia('assets/ai视频/翁丁古寨.mp4','video')">
-        <div class="work-media">
-          <div class="work-thumb" style="background:linear-gradient(135deg,#2a1a0a,#1a0a00)"></div>
-          <div class="work-play">▶</div>
-          <span class="work-type-badge">AI 视频</span>
-        </div>
-        <div class="work-info">
-          <h3>翁丁古寨·晨火</h3>
-          <p>佤族文化 · AI 生成</p>
-          <span class="work-tag">民族文化</span>
-        </div>
+      <!-- AI 翻唱 -->
+      <div class="work-card" data-type="audio" onclick="openMedia('assets/ai-video/fba10bb7bec936bc6e0e8ec481bf1ea3.mp4','video')">
+        <div class="work-media" style="background:linear-gradient(135deg,#1a0a3a,#0a0514);display:flex;align-items:center;justify-content:center;"><div style="font-size:4rem;">🎵</div><div class="work-play">▶</div><span class="work-type-badge">AI 翻唱</span></div>
+        <div class="work-info"><h3>AI 翻唱 01</h3></div>
+      </div>
+      <div class="work-card" data-type="audio" onclick="openMedia('assets/ai-video/%E6%8A%96%E9%9F%B32025827-675938.mp4','video')">
+        <div class="work-media" style="background:linear-gradient(135deg,#0a1a3a,#050a20);display:flex;align-items:center;justify-content:center;"><div style="font-size:4rem;">🎵</div><div class="work-play">▶</div><span class="work-type-badge">AI 翻唱</span></div>
+        <div class="work-info"><h3>AI 翻唱 02</h3></div>
       </div>
 
-      <div class="work-card" data-type="video" onclick="openMedia('assets/ai视频/大雪山云海.mp4','video')">
-        <div class="work-media">
-          <div class="work-thumb" style="background:linear-gradient(135deg,#0a1a2a,#060e18)"></div>
-          <div class="work-play">▶</div>
-          <span class="work-type-badge">AI 视频</span>
-        </div>
-        <div class="work-info">
-          <h3>大雪山云海</h3>
-          <p>原始森林 · AI 生成</p>
-          <span class="work-tag">自然景观</span>
-        </div>
+      <!-- AI 海报 -->
+      <div class="work-card" data-type="poster" onclick="openMedia('assets/ai-poster/2bb41c842229533bdb41d0cc1058a978.jpg','image')">
+        <div class="work-media"><img class="work-thumb" src="assets/ai-poster/2bb41c842229533bdb41d0cc1058a978.jpg" loading="lazy" /><span class="work-type-badge">AI 海报</span></div>
+        <div class="work-info"><h3>AI 海报 01</h3></div>
       </div>
-
-      <!-- ===== AI 翻唱 ===== -->
-      <div class="work-card" data-type="audio">
-        <div class="work-media" style="background:linear-gradient(135deg,#1a0a2a,#0e0618);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
-          <div style="font-size:48px;">🎵</div>
-          <span style="font-size:13px;color:#9db09a;">AI 翻唱</span>
-          <span class="work-type-badge">AI 翻唱</span>
-        </div>
-        <div class="work-info">
-          <h3>临沧·故乡</h3>
-          <p>AI 人声翻唱 · 原创编曲</p>
-          <div class="work-audio-bar">
-            <audio controls src="assets/ai翻唱/临沧故乡.mp3"></audio>
-          </div>
-        </div>
+      <div class="work-card" data-type="poster" onclick="openMedia('assets/ai-poster/31a9aee118640852f2557542a986e613.jpg','image')">
+        <div class="work-media"><img class="work-thumb" src="assets/ai-poster/31a9aee118640852f2557542a986e613.jpg" loading="lazy" /><span class="work-type-badge">AI 海报</span></div>
+        <div class="work-info"><h3>AI 海报 02</h3></div>
       </div>
-
-      <div class="work-card" data-type="audio">
-        <div class="work-media" style="background:linear-gradient(135deg,#0a1a2a,#061018);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
-          <div style="font-size:48px;">🎶</div>
-          <span style="font-size:13px;color:#9db09a;">AI 翻唱</span>
-          <span class="work-type-badge">AI 翻唱</span>
-        </div>
-        <div class="work-info">
-          <h3>澜沧江边</h3>
-          <p>AI 人声翻唱 · 民谣风</p>
-          <div class="work-audio-bar">
-            <audio controls src="assets/ai翻唱/澜沧江边.mp3"></audio>
-          </div>
-        </div>
+      <div class="work-card" data-type="poster" onclick="openMedia('assets/ai-poster/39742ba9df888f923153524602ca7253.jpg','image')">
+        <div class="work-media"><img class="work-thumb" src="assets/ai-poster/39742ba9df888f923153524602ca7253.jpg" loading="lazy" /><span class="work-type-badge">AI 海报</span></div>
+        <div class="work-info"><h3>AI 海报 03</h3></div>
       </div>
-
-      <!-- ===== AI 海报 ===== -->
-      <div class="work-card" data-type="image" onclick="openMedia('assets/ai海报图片/崖画.jpg','image')">
-        <div class="work-media">
-          <div class="work-thumb" style="background:linear-gradient(135deg,#2a1a0a,#180e04)"></div>
-          <span class="work-type-badge">AI 海报</span>
-        </div>
-        <div class="work-info">
-          <h3>沧源崖画·古今</h3>
-          <p>3000年岩画 · AI 生成</p>
-          <span class="work-tag">历史文化</span>
-        </div>
+      <div class="work-card" data-type="poster" onclick="openMedia('assets/ai-poster/646ed021783044ed981c46c8a5b32638.jpg','image')">
+        <div class="work-media"><img class="work-thumb" src="assets/ai-poster/646ed021783044ed981c46c8a5b32638.jpg" loading="lazy" /><span class="work-type-badge">AI 海报</span></div>
+        <div class="work-info"><h3>AI 海报 04</h3></div>
       </div>
-
-      <div class="work-card" data-type="image" onclick="openMedia('assets/ai海报图片/茶山.jpg','image')">
-        <div class="work-media">
-          <div class="work-thumb" style="background:linear-gradient(135deg,#0a2a14,#041a0a)"></div>
-          <span class="work-type-badge">AI 海报</span>
-        </div>
-        <div class="work-info">
-          <h3>茶山梯田·晨雾</h3>
-          <p>普洱茶园 · AI 生成</p>
-          <span class="work-tag">茶文化</span>
-        </div>
+      <div class="work-card" data-type="poster" onclick="openMedia('assets/ai-poster/694c0d59db4a9f6296c192c5bfeff00d.jpg','image')">
+        <div class="work-media"><img class="work-thumb" src="assets/ai-poster/694c0d59db4a9f6296c192c5bfeff00d.jpg" loading="lazy" /><span class="work-type-badge">AI 海报</span></div>
+        <div class="work-info"><h3>AI 海报 05</h3></div>
       </div>
-
-      <div class="work-card" data-type="image" onclick="openMedia('assets/ai海报图片/边境.jpg','image')">
-        <div class="work-media">
-          <div class="work-thumb" style="background:linear-gradient(135deg,#1a1a0a,#0e0e04)"></div>
-          <span class="work-type-badge">AI 海报</span>
-        </div>
-        <div class="work-info">
-          <h3>中缅边境·黄昏</h3>
-          <p>边境风情 · AI 生成</p>
-          <span class="work-tag">边境风情</span>
-        </div>
+      <div class="work-card" data-type="poster" onclick="openMedia('assets/ai-poster/69c1e611c5299a27e04ebbc33ae2bdbe.jpg','image')">
+        <div class="work-media"><img class="work-thumb" src="assets/ai-poster/69c1e611c5299a27e04ebbc33ae2bdbe.jpg" loading="lazy" /><span class="work-type-badge">AI 海报</span></div>
+        <div class="work-info"><h3>AI 海报 06</h3></div>
       </div>
-
+      <div class="work-card" data-type="poster" onclick="openMedia('assets/ai-poster/7078351fe4472de0d9f34f1eef9b3b5f.jpg','image')">
+        <div class="work-media"><img class="work-thumb" src="assets/ai-poster/7078351fe4472de0d9f34f1eef9b3b5f.jpg" loading="lazy" /><span class="work-type-badge">AI 海报</span></div>
+        <div class="work-info"><h3>AI 海报 07</h3></div>
+      </div>
+      <div class="work-card" data-type="poster" onclick="openMedia('assets/ai-poster/85184b070bd0ccde0c6ed0bbdc7d4790.jpg','image')">
+        <div class="work-media"><img class="work-thumb" src="assets/ai-poster/85184b070bd0ccde0c6ed0bbdc7d4790.jpg" loading="lazy" /><span class="work-type-badge">AI 海报</span></div>
+        <div class="work-info"><h3>AI 海报 08</h3></div>
+      </div>
+      <div class="work-card" data-type="poster" onclick="openMedia('assets/ai-poster/911b8f155fc43b024aa89ec7f855c3a2.jpg','image')">
+        <div class="work-media"><img class="work-thumb" src="assets/ai-poster/911b8f155fc43b024aa89ec7f855c3a2.jpg" loading="lazy" /><span class="work-type-badge">AI 海报</span></div>
+        <div class="work-info"><h3>AI 海报 09</h3></div>
+      </div>
+      <div class="work-card" data-type="poster" onclick="openMedia('assets/ai-poster/9affa8f2200151225dbb8c5b4c49773c.jpg','image')">
+        <div class="work-media"><img class="work-thumb" src="assets/ai-poster/9affa8f2200151225dbb8c5b4c49773c.jpg" loading="lazy" /><span class="work-type-badge">AI 海报</span></div>
+        <div class="work-info"><h3>AI 海报 10</h3></div>
+      </div>
     </div>
   </section>
 
-  <section class="add-work-hint">
-    <p>添加作品：将文件放入对应文件夹 <code>assets/ai视频/</code> · <code>assets/ai翻唱/</code> · <code>assets/ai海报图片/</code>，然后在此页复制一个卡片即可。</p>
-  </section>
-
-  <!-- 媒体模态框 -->
   <div id="mediaModal">
     <span class="modal-close" onclick="closeModal()">✕</span>
     <div id="modalContent"></div>
   </div>
 
-  <footer class="footer">
-    <p>© 2026 临沧·影像志 · 用 AI 记录这片土地</p>
-  </footer>
-
+  <footer class="footer"><p>© 2026 杨发才 AI 作品集</p></footer>
   <script src="main.js"></script>
 </body>
 </html>
